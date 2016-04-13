@@ -5,6 +5,7 @@ bool aux::doesEventOccur (double probability)
   return rand() / double(RAND_MAX) <= probability;
 }
 
+/*
 int aux::randInt (int min, int max)
 {
   return min + (rand() % (max - min));
@@ -19,6 +20,7 @@ size_t aux::randSize (size_t min, size_t max)
 {
   return min + (rand() % (max - min + 1));
 }
+*/
 
 double aux::min(double n1, double n2, double n3)
 {
@@ -29,3 +31,11 @@ double aux::sigmoid(double value, double a, double c)
 {
   return 1. / (1. + std::exp(-a * (value - c)));
 }
+
+/*
+template <typename T>
+T aux::randomInRange (const T& min, const T& max)
+{
+
+}
+*/

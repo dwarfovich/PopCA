@@ -202,7 +202,7 @@ Animate *Animate::createMutant(double size)
 
 Direction Animate::migrationDirection () const
 {
-  return Direction(aux::randInt(1, 8));
+  return Direction(aux::randomInRange(1, 8));
 }
 
 void Animate::acceptPopulation (Population *population)
@@ -226,13 +226,13 @@ void Animate::acceptPopulation (Population *population)
 
 double Animate::propertyVariation (double value, double max_amplitude)
 {
-  double amplitude = aux::randDouble(-value * max_amplitude, value * max_amplitude);
+  double amplitude = aux::randomInRange(-value * max_amplitude, value * max_amplitude);
   return (value + amplitude >= 0. ? value + amplitude : min_double);
 }
 
 double Animate::unitPropertyVariation (double value, double max_amplitude)
 {
-  double amplitude = aux::randDouble(-value * max_amplitude, value * max_amplitude);
+  double amplitude = aux::randomInRange(-value * max_amplitude, value * max_amplitude);
   if (amplitude < 0.)
     return (value + amplitude >= 0. ? value + amplitude : min_double);
   else
