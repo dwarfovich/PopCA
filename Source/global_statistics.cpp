@@ -1,4 +1,4 @@
-#include "globalstatistics.h"
+#include "global_statistics.h"
 #include "world.h"
 
 GlobalStatistics::GlobalStatistics(World *world, size_t length)

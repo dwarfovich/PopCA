@@ -1,4 +1,4 @@
-#include "animategenealogy.h"
+#include "animate_genealogy.h"
 
 AnimateGenealogy::AnimateGenealogy()
 {}

@@ -3,9 +3,9 @@
 
 #include "auxiliary.h"
 #include "population.h"
-#include "animateproperties.h"
+#include "animate_properties.h"
 #include "cell.h"
-#include "worldparameters.h"
+#include "world_parameters.h"
 
 #include <memory>
 #include <vector>

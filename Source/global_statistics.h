@@ -3,7 +3,7 @@
 
 #include "auxiliary.h"
 #include "animate.h"
-#include "projectparameters.h"
+#include "project_parameters.h"
 
 #include <QFile>
 #include <QDataStream>

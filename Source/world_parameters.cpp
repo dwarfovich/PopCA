@@ -1,4 +1,4 @@
-#include "worldparameters.h"
+#include "world_parameters.h"
 
 size_t WorldParameters::sizeI = 0;
 size_t WorldParameters::sizeJ = 0;

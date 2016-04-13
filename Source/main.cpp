@@ -2,7 +2,7 @@
 #include "animate.h"
 #include "chemical.h"
 #include "labelledanimate.h"
-#include "projectparameters.h"
+#include "project_parameters.h"
 
 #include <set>
 #include <map>
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
   size_t size = 7;
   ProjectParameters::project_name = "Test project";
   ProjectParameters::result_filename = "/home/boo/Results/res.bin";
-  ProjectParameters::max_iteration = 20000;
+  ProjectParameters::max_iteration = 10;
   WorldParameters::sizeI = size;
   WorldParameters::sizeJ = size;
   WorldParameters::feeding_efficacy_ = 0.1;

@@ -4,9 +4,9 @@
 #include "cell.h"
 #include "environment.h"
 #include "population.h"
-#include "globalstatistics.h"
+#include "global_statistics.h"
 #include "animate.h"
-#include "worldparameters.h"
+#include "world_parameters.h"
 
 #include <sys/sysinfo.h>
 #include <omp.h>

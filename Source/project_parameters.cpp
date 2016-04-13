@@ -1,4 +1,4 @@
-#include "projectparameters.h"
+#include "project_parameters.h"
 
 std::string ProjectParameters::project_name    {};
 std::string ProjectParameters::result_filename {};
