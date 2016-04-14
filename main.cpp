@@ -22,8 +22,8 @@ int main(int argc, char *argv[])
   srand(time(NULL));
   size_t size = 7;
   ProjectParameters::project_name = "Test project";
-  ProjectParameters::result_filename = "/home/boo/Results/res.bin";
-  ProjectParameters::max_iteration = 3000;
+  ProjectParameters::result_filename = "res.bin";
+  ProjectParameters::max_iteration = 100;
   WorldParameters::sizeI = size;
   WorldParameters::sizeJ = size;
   WorldParameters::feeding_efficacy_ = 0.1;
