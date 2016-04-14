@@ -80,12 +80,12 @@ int main(int argc, char *argv[])
   world.setCollectStatistics(true);
   auto t1 = system_clock::now();
 
-  world.play(ProjectParameters::max_iteration, 7);
+  world.play(ProjectParameters::max_iteration, 1);
 
   auto t2 = system_clock::now();
   auto timing = duration_cast<std::chrono::milliseconds>(t2 - t1).count();
   cout << "Duration: " << timing << " ms" << endl;
-  cout << "max size_t: " << std::numeric_limits<size_t>::max() << endl;
+  //cout << "max size_t: " << std::numeric_limits<size_t>::max() << endl;
   cout << "pop counter: " << Animate::idCounter() << endl;
 
   world.saveStatistics(ProjectParameters::result_filename);

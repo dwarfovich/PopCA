@@ -87,7 +87,7 @@ void GlobalStatistics::saveGlobalStatistics (const std::string& filename)
     stream.write(reinterpret_cast<char*>( &max_lifetime_[0]   ), pvector_size);
 
     stream.close();
-    saveAsText("");
+    //saveAsText("");
   } else {
     std::cerr << "Error in saveGlobalStatistics(): can't open file" << endl;
   }
