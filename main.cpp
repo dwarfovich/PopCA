@@ -22,16 +22,17 @@ int main(int argc, char *argv[])
 {
   srand(time(0));
 
-  size_t size = 8;
+  size_t size = 48;
   ProjectParameters::project_name = "Test project";
   ProjectParameters::result_filename = "res.bin";
-  ProjectParameters::max_iteration = 2000;
+  ProjectParameters::max_iteration = 5000;
+  ProjectParameters::preferred_threads = 7;
   WorldParameters::sizeI = size;
   WorldParameters::sizeJ = size;
   WorldParameters::feeding_efficacy_ = 0.1;
   WorldParameters::feed_ability_increase_ = 0.1;
   WorldParameters::max_variation_amplitude_ = 0.1;
-  WorldParameters::fatal_size = 0.05;
+  WorldParameters::fatal_size = 0.1;
   WorldParameters::fatal_energy = 0.1;
 
   if (argc != 2) {
@@ -82,7 +83,7 @@ int main(int argc, char *argv[])
   world.setCollectStatistics(true);
   auto t1 = system_clock::now();
 
-  world.play(ProjectParameters::max_iteration, 8);
+  world.play(ProjectParameters::max_iteration, ProjectParameters::preferred_threads);
 
   auto t2 = system_clock::now();
   auto timing = duration_cast<std::chrono::milliseconds>(t2 - t1).count();
