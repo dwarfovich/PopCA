@@ -1,3 +1,7 @@
 # Qt Creator project files
 *.pro
 *.pro.user
+# Object and binary files
+*.o
+*.exe
+*.bin
