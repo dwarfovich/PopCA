@@ -5,10 +5,6 @@
 #include "animate.h"
 #include "project_parameters.h"
 
-#include <QFile>
-#include <QDataStream>
-#include <QTextStream>
-
 #include <fstream>
 #include <list>
 #include <map>

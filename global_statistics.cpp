@@ -95,6 +95,7 @@ void GlobalStatistics::saveGlobalStatistics (const std::string& filename)
 
 void GlobalStatistics::saveAsText (const std::string& filename)
 {
+  /*
   //QFile file (QString::fromStdString(filename));
   QFile file ("/home/boo/Results/res.txt");
   file.open(QIODevice::WriteOnly);
@@ -142,4 +143,5 @@ void GlobalStatistics::saveAsText (const std::string& filename)
   stream << endl;
 
   file.close();
+  */
 }

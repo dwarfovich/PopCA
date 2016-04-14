@@ -23,13 +23,13 @@ int main(int argc, char *argv[])
   size_t size = 7;
   ProjectParameters::project_name = "Test project";
   ProjectParameters::result_filename = "/home/boo/Results/res.bin";
-  ProjectParameters::max_iteration = 2000;
+  ProjectParameters::max_iteration = 3000;
   WorldParameters::sizeI = size;
   WorldParameters::sizeJ = size;
   WorldParameters::feeding_efficacy_ = 0.1;
   WorldParameters::feed_ability_increase_ = 0.1;
   WorldParameters::max_variation_amplitude_ = 0.1;
-  WorldParameters::fatal_size = 0.05;
+  WorldParameters::fatal_size = 0.01;
   WorldParameters::fatal_energy = 0.1;
 
   if (argc != 2) {
@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
   cout << "max size_t: " << std::numeric_limits<size_t>::max() << endl;
   cout << "pop counter: " << Animate::idCounter() << endl;
 
-  world.saveStatistics("/home/boo/Results/res.bin");
+  world.saveStatistics(ProjectParameters::result_filename);
   //Animate::printGenealogy();
 
   // actually will be deleted in ~Cell
